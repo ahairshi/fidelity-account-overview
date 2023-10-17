@@ -1,0 +1,16 @@
+tasks:
+  - name: streamlit
+    before: |
+      pip install --upgrade pip
+      pip install --extra-index-url https://pypi.fury.io/arrow-nightlies --prefer-binary --pre pyarrow
+      pip install streamlit matplotlib
+      python -V
+      streamlit --version
+
+  
+vscode:
+  extensions:
+    - phil294.git-log--graph
+    - mhutchie.git-graph
+    - phil294.git-log--graph
+
